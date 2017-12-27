@@ -10,3 +10,10 @@
   ],
   "plugins": ["transform-vue-jsx", "transform-runtime"]
 }
+// .babelrc iview
+//{
+//  "plugins": [["import", {
+//    "libraryName": "iview",
+//    "libraryDirectory": "src/components"
+//  }]]
+//}
