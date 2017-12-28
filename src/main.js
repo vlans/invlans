@@ -3,6 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import iView from 'iview'
+import axios from 'axios'
+import 'iview/dist/styles/iview.css'
 
 // iview
 // import VueRouter from 'vue-router';
@@ -24,6 +27,14 @@ Vue.use(iView);
 // const routers = new VueRouter(RouterConfig);
 
 Vue.config.productionTip = false
+
+Vue.use(iView)
+
+Vue.prototype.$api = axios.create(
+  {
+    baseURL: 'http://www.invlans.com/api/'
+  }
+)
 
 /* eslint-disable no-new */
 new Vue({

@@ -1,10 +1,14 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+<<<<<<< HEAD
 import invlans from '@/components/invlans'
 
 const Foo = { template: '<div>foo</div>' }
 const Bar = { template: '<div>bar</div>' }
 const Baz = { template: '<div>baz</div>' }
+=======
+import Index from '@/components/index'
+>>>>>>> 9426bee8a86a345d181135c9ff4d0974f9317807
 
 Vue.use(Router)
 
@@ -13,6 +17,7 @@ export default new Router({
   routes: [
     {
       path: '/',
+<<<<<<< HEAD
       name: 'invlans',
       component: invlans
     },
@@ -32,6 +37,10 @@ export default new Router({
         a: Bar,
         b: Foo
       }
+=======
+      name: 'index',
+      component: Index
+>>>>>>> 9426bee8a86a345d181135c9ff4d0974f9317807
     }
   ]
 })
