@@ -77,17 +77,17 @@
         </Breadcrumb>
         <Card>
           <div style="height: 600px">
-            <!--<ul>-->
-              <!--<li>-->
-                <!--<router-link to="/user">/user</router-link>-->
-              <!--</li>-->
-              <!--<li>-->
-                <!--<router-link to="/other">/other</router-link>-->
-              <!--</li>-->
-            <!--</ul>-->
-            <!--<router-view class="view one"></router-view>-->
-            <!--<router-view class="view two" name="a"></router-view>-->
-            <!--<router-view class="view three" name="b"></router-view>-->
+            <ul>
+              <li>
+                <router-link to="/user">/user</router-link>
+              </li>
+              <li>
+                <router-link to="/other">/other</router-link>
+              </li>
+            </ul>
+            <router-view class="view one"></router-view>
+            <router-view class="view two" name="a"></router-view>
+            <router-view class="view three" name="b"></router-view>
             <template>
               <Table border :columns="columns7" :data="data6"></Table>
             </template>
