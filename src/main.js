@@ -13,12 +13,13 @@ import 'iview/dist/styles/iview.css';
 // Vue.component('Button', Button);
 // Vue.component('Table', Table);
 
+
 // Vue.use(VueRouter);
 Vue.use(iView);
 
 // The routing configuration
 // const RouterConfig = {
-//   routes: router
+//   routes: Routers
 // };
 // const routers = new VueRouter(RouterConfig);
 

@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <Sider :style="{position: 'fixed', height: '100vh', left: 0, overflow: 'auto'}">
-      <Menu active-name="1-2" theme="dark" width="auto" :open-names="['1']">
+      <Menu active-name="1-1" theme="dark" width="auto" :open-names="['1']">
         <Submenu name="1">
           <template slot="title">
             <Icon type="ios-navigate"></Icon>
@@ -26,45 +26,45 @@
           <MenuItem name="3-1">列表</MenuItem>
           <MenuItem name="3-2">列表</MenuItem>
         </Submenu>
-        <Submenu name="3">
+        <Submenu name="4">
           <template slot="title">
             <Icon type="ios-analytics"></Icon>
             审核管理
           </template>
-          <MenuItem name="3-1">列表</MenuItem>
-          <MenuItem name="3-2">列表</MenuItem>
+          <MenuItem name="4-1">列表</MenuItem>
+          <MenuItem name="4-2">列表</MenuItem>
         </Submenu>
-        <Submenu name="3">
+        <Submenu name="5">
           <template slot="title">
             <Icon type="ios-analytics"></Icon>
             权限管理
           </template>
-          <MenuItem name="3-1">列表</MenuItem>
-          <MenuItem name="3-2">列表</MenuItem>
+          <MenuItem name="5-1">列表</MenuItem>
+          <MenuItem name="5-2">列表</MenuItem>
         </Submenu>
-        <Submenu name="3">
+        <Submenu name="6">
           <template slot="title">
             <Icon type="ios-analytics"></Icon>
-            组成员
+            组成员&nbsp;&nbsp;&nbsp;&nbsp;
           </template>
-          <MenuItem name="3-1">列表</MenuItem>
-          <MenuItem name="3-2">列表</MenuItem>
+          <MenuItem name="6-1">列表</MenuItem>
+          <MenuItem name="6-2">列表</MenuItem>
         </Submenu>
-        <Submenu name="3">
+        <Submenu name="7">
           <template slot="title">
             <Icon type="ios-analytics"></Icon>
             活动管理
           </template>
-          <MenuItem name="3-1">列表</MenuItem>
-          <MenuItem name="3-2">列表</MenuItem>
+          <MenuItem name="7-1">列表</MenuItem>
+          <MenuItem name="7-2">列表</MenuItem>
         </Submenu>
-        <Submenu name="3">
+        <Submenu name="8">
           <template slot="title">
             <Icon type="ios-analytics"></Icon>
             日志管理
           </template>
-          <MenuItem name="3-1">列表</MenuItem>
-          <MenuItem name="3-2">列表</MenuItem>
+          <MenuItem name="8-1">列表</MenuItem>
+          <MenuItem name="8-2">列表</MenuItem>
         </Submenu>
       </Menu>
     </Sider>
@@ -77,6 +77,17 @@
         </Breadcrumb>
         <Card>
           <div style="height: 600px">
+            <!--<ul>-->
+              <!--<li>-->
+                <!--<router-link to="/user">/user</router-link>-->
+              <!--</li>-->
+              <!--<li>-->
+                <!--<router-link to="/other">/other</router-link>-->
+              <!--</li>-->
+            <!--</ul>-->
+            <!--<router-view class="view one"></router-view>-->
+            <!--<router-view class="view two" name="a"></router-view>-->
+            <!--<router-view class="view three" name="b"></router-view>-->
             <template>
               <Table border :columns="columns7" :data="data6"></Table>
             </template>
@@ -263,7 +274,7 @@ export default {
   methods: {
     show (index) {
       this.$Modal.info({
-        title: 'User Info',
+        title: 'User Info View',
         content: `Name：${this.data6[index].name}<br>Age：${this.data6[index].age}<br>Sex：${this.data6[index].sex}<br>Occupation：${this.data6[index].occupation}<br>IdCard：${this.data6[index].IdCard}<br>RegistrationTime：${this.data6[index].registrationTime}<br>LoginTime：${this.data6[index].loginTime}<br>Status：${this.data6[index].status}<br>ExamineAndVerify：${this.data6[index].examineAndVerify}<br>Attestation：${this.data6[index].attestation}`
       })
     },
