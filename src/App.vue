@@ -1,9 +1,5 @@
 <template>
   <div id="app">
-<<<<<<< HEAD
-    <!--<img src="./assets/logo.png">-->
-    <router-view/>
-=======
     <div class="layout">
       <Sider :style="{ position: 'fixed', height: '100vh', left: 0, overflow: 'auto' }">
         <Menu active-name="1-1" theme="dark" width="auto" :open-names="['1']">
@@ -90,7 +86,6 @@
         </Content>
       </Layout>
     </div>
->>>>>>> 9426bee8a86a345d181135c9ff4d0974f9317807
   </div>
 </template>
 
@@ -100,16 +95,6 @@ export default {
 </script>
 
 <style>
-<<<<<<< HEAD
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  /*margin-top: 60px;*/
-}
-=======
   html, body, #app {
     height: 100%;
   }
@@ -125,5 +110,4 @@ export default {
     background: #fff;
     box-shadow: 0 1px 1px rgba(0,0,0,.1);
   }
->>>>>>> 9426bee8a86a345d181135c9ff4d0974f9317807
 </style>

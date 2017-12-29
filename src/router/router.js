@@ -2,7 +2,6 @@ const Foo = { template: '<div>foo</div>' }
 const Bar = { template: '<div>bar</div>' }
 const Baz = { template: '<div>baz</div>' }
 
-console.log(1)
 const router = new VueRouter({
   mode: 'history',
   routes: [
